@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* :root {
+  --anime: all 0.2s ease;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 10px;
+  background-color: #06283d;
+}
+
+.wrapper {
+  width: 420px;
+  height: 270px;
+  border-radius: 8px;
+  padding: 30px 30px 35px;
+  transition: var(--anime);
+  background-color: #334155;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper.active {
+  height: 525px;
+}
+
+.wrapper form {
+  background: #fff;
+  display: flex;
+  height: 210px;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  transition: var(--anime);
+}
+.wrapper.active form {
+  height: 290px;
+  pointer-events: none;
+}
+
+form img {
+  /* display: none; */
+  max-width: 7.5rem;
+}
+.wrapper.active form img {
+  display: block;
+}
+
+.wrapper.active form.content {
+  display: none;
+  opacity: 0;
+}
+
+form .content i {
+  color: #334155;
+  font-size: 3.5rem;
+}
+form .content p {
+  margin-top: 1rem;
+  color: #334155;
+  font-size: 2rem;
+}
+
+.wrapper .details {
+  margin-top: 65px;
+  pointer-events: none;
+  opacity: 1;
+}
+
+.wrapper .active .details {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.05s ease;
+  color: white;
+}
+.details textarea {
+  height: 128px;
+  width: 100%;
+  border-radius: 10px;
+  background: none;
+  color: #fff;
+  resize: none;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 1.62rem;
+  font-weight: 600;
+  border: 1px solid white;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0rem;
+}
+textarea:hover::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+textarea:hover::-webkit-scrollbar-track {
+  background: none;
+}
+
+textarea:hover::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.details .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.buttons button {
+  height: 50px;
+  width: calc(100% / 2 - 10px);
+  border: none;
+  outline: none;
+  font-size: 23px;
+  font-weight: 800;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #334155;
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+.buttons button:active {
+  transform: scale(0.95);
+}
