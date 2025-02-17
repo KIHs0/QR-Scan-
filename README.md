@@ -11,9 +11,11 @@ A fast and reliable QR code scanner that lets you scan QR codes using your camer
 ## 🚀 Technologies Used
 - **Frontend:** HTML, CSS, JavaScript  
 - **QR Scanner Library:** `jsQR`, `qr-scanner`  
-- **(Optional)** Backend: Node.js, Express.js  
+- **(Optional)** Backend: Node.js, Express.js
+
+```sh  
 ![Alt Text](image.png)
-![QR Scanner Preview](image.png)
+
 
  
 ## 📦 How to Use
